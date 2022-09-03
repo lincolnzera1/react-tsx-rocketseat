@@ -11,7 +11,7 @@ export function App() {
     
     <ThemeProvider theme={defaultTheme}>
       
-      <h1>Se o dolar abaixar eu vou de air france</h1>
+      <h1>Estoicismo</h1>
       <Button cor="primary" />
       <Button cor="secondary"/>
       <Button cor="danger"/>
