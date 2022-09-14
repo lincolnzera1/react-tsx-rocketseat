@@ -5,12 +5,6 @@ import { CyclesContext } from '../../../../contexts/CyclesContext'
 import { CountDownContainer } from '../NewCycleForm/styles'
 import { Separator } from './style'
 
-/* interface CountdownProps {
-  activeCycle: any
-  setCycles: any
-  activeCycleId: any
-} */
-
 export function Countdown() {
   const {
     activeCycle,
@@ -29,7 +23,7 @@ export function Countdown() {
       interval = setInterval(() => {
         const secondsDifference = differenceInSeconds(
           new Date(),
-          activeCycle.startDate,
+          new Date(activeCycle.startDate),
         )
 
         if (secondsDifference >= totalSeconds) {
